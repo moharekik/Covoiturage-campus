@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covoiturage libre, sans commission et coopératif</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+    <h1>Covoiturage libre, sans commission et coopératif</h1>
+    </header>
+    <main>
+    <section id="inscription">
+        <h2>Inscription</h2>
+        <form >
+            <label for="numero_etudiant">Numéro étudiant*</label>
+            <input type="text" id="numero_etudiant" name="numero_etudiant" placeholder="Numéro étudiant"><br>
+
+            <label for="nom">Nom*</label>
+          <input type="text" id="nom" name="nom" placeholder="Nom" required><br>
+
+          <label for="prenom">Prenom*</label>
+          <input type="text" id="prenom" name="prenom" placeholder="Prenom" required><br>
+
+          <label for="email">Adresse email*</label>
+          <input type="email" id="email" name="email" placeholder="Adresse email" required><br>
+
+          <label for="telephone">Numéro de téléphone</label>
+          <input type="tel" id="telephone" name="telephone" placeholder="Numéro de téléphone"><br>
+
+            <label for="Conducteur">Conducteur</label>
+            <input type="checkbox" id="conducteur" name="conducteur">
+        <br>
+        <button type="submit" id="submit_inscription">S'inscrire </button>
+        </form>
+        
+      </section>
+
+    <section id="Publication">
+        <h2>Publier une annonce</h2>
+    <form >
+        <label for="lieu_depart">Lieu de départ *</label>
+        <input type="text" id="lieu_depart" name="lieu_depart" placeholder="Lieu de départ" required>
+        <br>
+        <label for="trajet_regulier">Trajet régulier</label>
+        <input type="checkbox" id="trajet_regulier" name="trajet_regulier">
+        <br>
+        <label for="date_depart">Date de départ</label>
+        <input type="date" id="date_depart" name="date_depart" placeholder="Date de départ" required>
+        <br>
+        <label for="lieu_arrivee">Lieu d'arrivée *</label>
+        <input type="text" id="lieu_arrivee" name="lieu_arrivee" placeholder="Lieu d'arrivée" required>
+        <br>
+        <button type="submit" id="submit_publication">Publier une annonce</button>
+    </form>
+    </section>
+
+
+    <section id="   Étudiants_inscrits">
+        <h2>Liste des Inscrits</h2>
+        <table id="tableauInscrits">
+            <thead>
+                <tr>
+                    <th>Numéro étudiant</th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Email</th>
+                    <th>Téléphone</th>
+                    <th>Conducteur</th>
+                </tr>
+            </thead>
+            <tbody id="tbodyInscrits">
+                <!-- Contenu du tableau des inscrits -->
+            </tbody>
+        </table>
+    </section>
+
+    <section id="publications">
+        <h2>Liste des Publications</h2>
+        <table id="tableauPublications">
+            <thead>
+                <tr>
+                    <th>Lieu de départ</th>
+                    <th>Trajet régulier</th>
+                    <th>Date de départ</th>
+                    <th>Lieu d'arrivée</th>
+                </tr>
+            </thead>
+            <tbody id="tbodyPublications">
+                <!-- Contenu du tableau des publications -->
+            </tbody>
+        </table>
+    </section>
+</main>
+    
+</body>
+</html>
